@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def generate_buzz():
-    page = '<html><body><h1>'
+    page = "<html><body bgcolor='black'><h1 style='color:#ededed; text-align: center; padding: 20%'>"
     page += generator.generate_buzz()
     page += '</h1></body></html>'
     return page
